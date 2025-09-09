@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3 uid="uid://e5ml3p2101nj"]
+
+[ext_resource type="Script" uid="uid://c1a103wunijvw" path="res://Items/script/item_data.gd" id="1_fx3e1"]
+[ext_resource type="Texture2D" uid="uid://c13y4mkbfaeqd" path="res://Items/sprites/items - Copy.png" id="2_ckthh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h7dnw"]
+atlas = ExtResource("2_ckthh")
+region = Rect2(32, 0, 32, 32)
+
+[resource]
+script = ExtResource("1_fx3e1")
+name = "mysterious poem script"
+description = "\"A window that kept close 
+Close enough so the butterflies don’t come 
+She covers a shade hidden away herself 
+Day turn into where the day sprouted 
+Where lime sprinkled 
+Then turned into where sky  
+The day where it has the most phylogenetic\""
+texture = SubResource("AtlasTexture_h7dnw")
+metadata/_custom_type_script = "uid://c1a103wunijvw"

@@ -1,0 +1,118 @@
+[gd_scene load_steps=7 format=3 uid="uid://k75a0pq0hiht"]
+
+[ext_resource type="Script" uid="uid://b7iqdfnwtgimw" path="res://GUI/dialog_system/scripts/dialog_system.gd" id="1_5yhxf"]
+[ext_resource type="Texture2D" uid="uid://chun4hcd7rnl0" path="res://GUI/dialog_system/sprites/text-bubble.png" id="2_mhrrj"]
+
+[sub_resource type="Gradient" id="Gradient_mhrrj"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ns6ro"]
+gradient = SubResource("Gradient_mhrrj")
+fill_from = Vector2(0, 1)
+fill_to = Vector2(0, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ns6ro"]
+texture = ExtResource("2_mhrrj")
+texture_margin_left = 16.0
+texture_margin_top = 16.0
+texture_margin_right = 16.0
+texture_margin_bottom = 16.0
+expand_margin_left = 14.0
+expand_margin_top = 10.0
+expand_margin_right = 14.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mhrrj"]
+content_margin_left = 4.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 1.0
+
+[node name="DialogSystem" type="CanvasLayer"]
+process_mode = 3
+layer = 0
+script = ExtResource("1_5yhxf")
+
+[node name="DialogUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="DialogUI"]
+modulate = Color(0.195217, 1.73271e-06, 0.884489, 1)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -243.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("GradientTexture2D_ns6ro")
+
+[node name="PanelContainer" type="PanelContainer" parent="DialogUI"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -857.0
+offset_top = -215.0
+offset_right = -257.0
+offset_bottom = -90.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.36, 1.48)
+theme_override_styles/panel = SubResource("StyleBoxTexture_ns6ro")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="DialogUI/PanelContainer"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "Example text 
+"
+scroll_active = false
+
+[node name="NameLabel" type="Label" parent="DialogUI"]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 372.0
+offset_right = 335.0
+offset_bottom = 400.0
+scale = Vector2(1.68, 1.64)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.447076, 0.22892, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/shadow_outline_size = 5
+theme_override_font_sizes/font_size = 20
+text = "NAME"
+
+[node name="Timer" type="Timer" parent="DialogUI"]
+one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="DialogUI"]
+bus = &"SFX"
+
+[node name="DialogProgramIndicator" type="PanelContainer" parent="DialogUI"]
+self_modulate = Color(0, 0.909804, 0, 1)
+layout_mode = 1
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 51.0
+offset_bottom = 42.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_mhrrj")
+
+[node name="Label" type="Label" parent="DialogUI/DialogProgramIndicator"]
+top_level = true
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 18
+text = "next"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://blqco12nwyyqa"]
+
+[ext_resource type="Script" uid="uid://bw2ueeqsyqdfl" path="res://levels/script/level_transition_interact.gd" id="1_jb4u8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t4wti"]
+resource_local_to_scene = true
+size = Vector2(32, 32)
+
+[node name="LevelTransitionInteract_Door" type="Area2D"]
+collision_layer = 0
+collision_mask = 4
+monitorable = false
+script = ExtResource("1_jb4u8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-16, 0)
+shape = SubResource("RectangleShape2D_t4wti")
+debug_color = Color(0.690034, 0.565062, 0, 0.42)

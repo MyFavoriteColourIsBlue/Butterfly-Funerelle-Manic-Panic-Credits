@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3 uid="uid://d28ij7g8fcy0i"]
+
+[ext_resource type="Script" uid="uid://c1a103wunijvw" path="res://Items/script/item_data.gd" id="1_3esax"]
+[ext_resource type="Texture2D" uid="uid://c13y4mkbfaeqd" path="res://Items/sprites/items - Copy.png" id="2_wc0ig"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h7dnw"]
+atlas = ExtResource("2_wc0ig")
+region = Rect2(32, 0, 32, 32)
+
+[resource]
+script = ExtResource("1_3esax")
+name = "Trinadowlanne's poem script"
+description = "“Where illuminates a white  
+Then turned into where the plants solemn 
+Where the plants turn into a tan pigment 
+then turned into where little clouds fall 
+The day where it has the less phylogenetic 
+Where the the floored clouds  
+Melt into a sky liquid 
+When it hits the day turn into where the day sprouted 
+And Trinadowlanne repeats” "
+texture = SubResource("AtlasTexture_h7dnw")
+metadata/_custom_type_script = "uid://c1a103wunijvw"

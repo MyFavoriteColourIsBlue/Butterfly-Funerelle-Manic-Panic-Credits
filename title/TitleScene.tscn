@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://bc602y47jvyh4"]
+
+[ext_resource type="Script" uid="uid://b2rnil7k6as1v" path="res://title/title_scene.gd" id="1_st131"]
+[ext_resource type="Texture2D" uid="uid://curvkhvqxwris" path="res://title/title.png" id="2_el5ys"]
+[ext_resource type="PackedScene" uid="uid://dspnnpfwoojgl" path="res://levels/player_spawn.tscn" id="2_koymp"]
+[ext_resource type="AudioStream" uid="uid://cuc45v2x647ld" path="res://levels/music/intro music.mp3" id="2_xpwnq"]
+[ext_resource type="AudioStream" uid="uid://mny48ccxn1el" path="res://title/audio/menu_focus.wav" id="3_pwmwe"]
+[ext_resource type="AudioStream" uid="uid://cepeged83rreq" path="res://title/audio/menu_select.wav" id="4_pfr3b"]
+
+[node name="TitleScene" type="Node2D"]
+script = ExtResource("1_st131")
+music = ExtResource("2_xpwnq")
+button_focus_audio = ExtResource("3_pwmwe")
+button_press_audio = ExtResource("4_pfr3b")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 3
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Control"]
+position = Vector2(575.75, 230.25)
+scale = Vector2(0.599219, 0.418056)
+texture = ExtResource("2_el5ys")
+
+[node name="ButtonNew" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -219.0
+offset_top = 145.0
+offset_right = -72.0
+offset_bottom = 204.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "New Game"
+
+[node name="ButtonContinue" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 74.0
+offset_top = 147.0
+offset_right = 221.0
+offset_bottom = 206.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Recall
+"
+
+[node name="PlayerSpawn" parent="." instance=ExtResource("2_koymp")]
+position = Vector2(576, 519)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+max_polyphony = 4

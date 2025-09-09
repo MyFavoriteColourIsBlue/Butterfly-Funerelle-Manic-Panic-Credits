@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="NPCResource" load_steps=3 format=3 uid="uid://q3koo3o2fy70"]
+
+[ext_resource type="Script" uid="uid://da6cgy7gmclrf" path="res://npc/scripts/npc_resource.gd" id="1_pqn5b"]
+[ext_resource type="Texture2D" uid="uid://clux37s4toxix" path="res://npc/sprites/poetunia.png" id="2_gjdx1"]
+
+[resource]
+script = ExtResource("1_pqn5b")
+npc_name = "Funerelle"
+sprite = ExtResource("2_gjdx1")
+dialog_audio_pitch = ""
+metadata/_custom_type_script = "uid://da6cgy7gmclrf"

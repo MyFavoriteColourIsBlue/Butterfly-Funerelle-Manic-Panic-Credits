@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://blrtbpxxtsuul"]
+
+[ext_resource type="Script" uid="uid://wni318wguuil" path="res://interactions/dialog/scripts/dialog_interaction.gd" id="1_gw46o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fowh7"]
+size = Vector2(44, 32)
+
+[node name="DialogInteraction" type="Area2D"]
+process_mode = 3
+collision_layer = 0
+collision_mask = 4
+monitorable = false
+script = ExtResource("1_gw46o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fowh7")
+debug_color = Color(0, 0.74902, 0.529412, 0.0627451)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

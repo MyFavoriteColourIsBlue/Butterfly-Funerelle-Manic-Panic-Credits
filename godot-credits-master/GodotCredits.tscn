@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://1jn1fppkxsuw"]
+
+[ext_resource type="Script" uid="uid://nb3tqi8s67tt" path="res://godot-credits-master/GodotCredits.gd" id="1_uhr3g"]
+
+[node name="GodotCredits" type="Node2D"]
+script = ExtResource("1_uhr3g")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CreditsContainer" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CreditsContainer"]
+layout_mode = 0
+offset_right = 88.0
+offset_bottom = 23.0
+scale = Vector2(3, 3)
+text = "Credits line"
+horizontal_alignment = 1

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="NPCResource" load_steps=3 format=3 uid="uid://r6xlqj1lbtqg"]
+
+[ext_resource type="Script" uid="uid://da6cgy7gmclrf" path="res://npc/scripts/npc_resource.gd" id="1_srut2"]
+[ext_resource type="Texture2D" uid="uid://clux37s4toxix" path="res://npc/sprites/poetunia.png" id="2_axmcq"]
+
+[resource]
+script = ExtResource("1_srut2")
+npc_name = "Poetunia"
+sprite = ExtResource("2_axmcq")
+dialog_audio_pitch = ""
+metadata/_custom_type_script = "uid://da6cgy7gmclrf"

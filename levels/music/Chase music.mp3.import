@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://crgnvjdnu53ad"
+path="res://.godot/imported/Chase music.mp3-a09aa067e5342f41cb267d1fb6a92fcb.mp3str"
+
+[deps]
+
+source_file="res://levels/music/Chase music.mp3"
+dest_files=["res://.godot/imported/Chase music.mp3-a09aa067e5342f41cb267d1fb6a92fcb.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

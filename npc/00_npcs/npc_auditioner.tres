@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="NPCResource" load_steps=3 format=3 uid="uid://jfexjmtfogsa"]
+
+[ext_resource type="Script" uid="uid://da6cgy7gmclrf" path="res://npc/scripts/npc_resource.gd" id="1_mlker"]
+[ext_resource type="Texture2D" uid="uid://dcnwq70pv84sy" path="res://npc/sprites/auditioner.png" id="2_4pyck"]
+
+[resource]
+script = ExtResource("1_mlker")
+npc_name = "The auditioner"
+sprite = ExtResource("2_4pyck")
+dialog_audio_pitch = ""
+metadata/_custom_type_script = "uid://da6cgy7gmclrf"

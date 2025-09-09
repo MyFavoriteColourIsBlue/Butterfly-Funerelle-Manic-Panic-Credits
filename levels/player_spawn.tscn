@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dspnnpfwoojgl"]
+
+[ext_resource type="Script" uid="uid://bm3rcput0pqeb" path="res://levels/script/player_spawn.gd" id="1_2efx6"]
+[ext_resource type="Texture2D" uid="uid://d2ek1wx80j4s8" path="res://Tile Maps/Sprites/Funerelle_sprite.png" id="1_j6jwq"]
+
+[node name="PlayerSpawn" type="Node2D"]
+script = ExtResource("1_2efx6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.298039, 1, 0.431373, 0.796078)
+position = Vector2(0, -22)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("1_j6jwq")
+hframes = 16
+vframes = 3

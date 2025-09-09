@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3 uid="uid://cj4my7f7iegh0"]
+
+[ext_resource type="Script" uid="uid://c1a103wunijvw" path="res://Items/script/item_data.gd" id="1_qm523"]
+[ext_resource type="Texture2D" uid="uid://c13y4mkbfaeqd" path="res://Items/sprites/items - Copy.png" id="2_v4vrn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h7dnw"]
+atlas = ExtResource("2_v4vrn")
+region = Rect2(32, 0, 32, 32)
+
+[resource]
+script = ExtResource("1_qm523")
+name = "final poem script"
+description = "“A window opens the butterflies  
+Her only choice was to be ignorant 
+butterflies kept pestering the girl 
+and then something sprouted from her hair  
+a flower from the butterflies  
+Overtime as the flower puts pressure  
+until the flower was in her final stage 
+The girl grabs one of the butterflies 
+And took it piece by piece 
+And then another 
+And then another 
+Villain and violent” 
+"
+texture = SubResource("AtlasTexture_h7dnw")
+metadata/_custom_type_script = "uid://c1a103wunijvw"

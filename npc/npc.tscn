@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://daqsvs0rfj7n4"]
+
+[ext_resource type="Script" uid="uid://cayqcq2abe4cp" path="res://npc/scripts/npc.gd" id="1_2xp5l"]
+[ext_resource type="Texture2D" uid="uid://dcnwq70pv84sy" path="res://npc/sprites/auditioner.png" id="2_nhy3c"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3i1kj"]
+radius = 10.8039
+
+[node name="NPC" type="CharacterBody2D"]
+scale = Vector2(0.65, 0.65)
+collision_layer = 0
+collision_mask = 16
+script = ExtResource("1_2xp5l")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -39)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_nhy3c")
+hframes = 16
+vframes = 3
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -15)
+scale = Vector2(1.28, 1.68)
+shape = SubResource("CircleShape2D_3i1kj")

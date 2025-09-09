@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3 uid="uid://icw0gjqoeh5j"]
+
+[ext_resource type="Script" uid="uid://c1a103wunijvw" path="res://Items/script/item_data.gd" id="1_ey42o"]
+[ext_resource type="Texture2D" uid="uid://c13y4mkbfaeqd" path="res://Items/sprites/items - Copy.png" id="2_l8qms"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h7dnw"]
+atlas = ExtResource("2_l8qms")
+region = Rect2(32, 0, 32, 32)
+
+[resource]
+script = ExtResource("1_ey42o")
+name = "poem script"
+description = "“Infant and innocent  
+Her hospitality has taken an interest  
+People around her wish her hospitality  
+although a second slip of plant wilted 
+butterflies swarmed at her 
+she trembles society she stops at her final clue 
+To isolate herself 
+So she flew to a lonely building  
+The building gave the girl an umbrella 
+And guide the helpless girl  
+Somewhere of a blissful red 
+where no one sees.”"
+texture = SubResource("AtlasTexture_h7dnw")
+metadata/_custom_type_script = "uid://c1a103wunijvw"
